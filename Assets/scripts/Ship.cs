@@ -43,5 +43,27 @@ public class Ship : MonoBehaviour
 		float rotationZ = CurrentAngle / 2f;
 
 		ShipModel.localRotation = Quaternion.Euler(rotationX, 0, rotationZ);
+
+		ShipGravity(ShipModel);
+	}
+
+	// void OnCollisionEnter(Collision c)
+	// {
+	// 	var pos = transform.position;
+	// 	Debug.Log(pos);
+	// }
+
+	void ShipGravity(Transform ShipModel)
+	{
+		if(ShipModel.position.y > 3f)
+		{
+			transform.position = new Vector3(transform.position.x, -1.04f, transform.position.z);
+			transform.rotation = Quaternion.Euler(0f, transform.rotation.y, 0f);
+			if(transform.rotation.x == 0f && transform.rotation.z == 0f)
+			{
+				rb.isKinematic = true;
+				rb.isKinematic = false;
+			}
+		}
 	}
 }
