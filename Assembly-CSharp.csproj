@@ -63,6 +63,7 @@
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\scripts\CannonBall.cs" />
      <Compile Include="Assets\scripts\CannonBallShooter.cs" />
      <Compile Include="Assets\scripts\PlayerCamera.cs" />
      <Compile Include="Assets\scripts\Ship.cs" />
