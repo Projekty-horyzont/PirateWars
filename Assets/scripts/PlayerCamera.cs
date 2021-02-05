@@ -10,10 +10,6 @@ public class PlayerCamera : MonoBehaviour
     public Vector3 Delta;
 
     float cameraAngle = 0f;
-    void Start()
-    {
-        
-    }
 
     void Update()
     {

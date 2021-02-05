@@ -24,7 +24,8 @@ public class CannonBall : MonoBehaviour
         if(particlesObject != null)
         {
             var position = collision.contacts[0].point;
-            Instantiate(particlesObject, position, Quaternion.identity);
+            GameObject particle = Instantiate(particlesObject, position, Quaternion.identity);
+            Destroy(particle, 1f);
         }
     }
 }
